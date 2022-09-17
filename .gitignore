@@ -11,5 +11,6 @@ dist/
 nbdist/
 .nb-gradle/
 target/
+*.DS_store
 
 # End of https://www.toptal.com/developers/gitignore/api/netbeans
