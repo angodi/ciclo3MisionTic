@@ -5,20 +5,19 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 public class DBConnection {
     Connection connection;
-    static String bd = "cl.distribuciones";
-    static String port = "3306";
+    static String bd = "railway";
+    static String port = "7993";
     static String loging = "root";
-    static String password = "soloyo";
-    
-    
+    static String password = "dHOmZAZoROiubwxCxNnR";
+    static String ip = "containers-us-west-90.railway.app";    
     
     public DBConnection() {
         try {
-            Class.forName("com.mysql.jdbc.Driver");
-            String url = "jdbc:mysql://localhost:"+this.port+"/"+this.bd;
+            Class.forName("com.mysql.jdbc.Driver");            
+            String url = "jdbc:mysql://"+ DBConnection.ip +":" + DBConnection.port + "/" + DBConnection.bd;
        
-            connection=DriverManager.getConnection(url, this.loging, this.password);
-            //System.out.println("");
+            connection=DriverManager.getConnection(url, DBConnection.loging, this.password);
+            
             System.out.println("conexion establecida");
            
         } catch (Exception ex) {

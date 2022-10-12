@@ -1,24 +1,24 @@
 
 package beans;
 
-public class Usuarios {
+public class Usuario {
     private String username;
-    private String contraseña;
+    private String contrasena;
     private String nombre;
     private String apellido;
     private String email;
-    private String tipousario;
+    private String tipousuario;
     private String telefono;
     private String ciudad;
     private String direccion;
 
-    public Usuarios(String username, String contraseña, String nombre, String apellido, String email, String tipousario, String telefono, String ciudad, String direccion) {
+    public Usuario(String username, String contrasena, String nombre, String apellido, String email, String tipousuario, String telefono, String ciudad, String direccion) {
         this.username = username;
-        this.contraseña = contraseña;
+        this.contrasena = contrasena;
         this.nombre = nombre;
         this.apellido = apellido;
         this.email = email;
-        this.tipousario = tipousario;
+        this.tipousuario = tipousuario;
         this.telefono = telefono;
         this.ciudad = ciudad;
         this.direccion = direccion;
@@ -32,12 +32,12 @@ public class Usuarios {
         this.username = username;
     }
 
-    public String getContraseña() {
-        return contraseña;
+    public String getContrasena() {
+        return contrasena;
     }
 
-    public void setContraseña(String contraseña) {
-        this.contraseña = contraseña;
+    public void setContraseña(String contrasena) {
+        this.contrasena = contrasena;
     }
 
     public String getNombre() {
@@ -65,11 +65,11 @@ public class Usuarios {
     }
 
     public String getTipousario() {
-        return tipousario;
+        return tipousuario;
     }
 
     public void setTipousario(String tipousario) {
-        this.tipousario = tipousario;
+        this.tipousuario = tipousario;
     }
 
     public String getTelefono() {
@@ -98,7 +98,7 @@ public class Usuarios {
 
     @Override
     public String toString() {
-        return "Usuarios{" + "username=" + username + ", contrase\u00f1a=" + contraseña + ", nombre=" + nombre + ", apellido=" + apellido + ", email=" + email + ", tipousario=" + tipousario + ", telefono=" + telefono + ", ciudad=" + ciudad + ", direccion=" + direccion + '}';
+        return "Usuario{" + "username=" + username + ", contrasena=" + contrasena + ", nombre=" + nombre + ", apellido=" + apellido + ", email=" + email + ", tipousario=" + tipousuario + ", telefono=" + telefono + ", ciudad=" + ciudad + ", direccion=" + direccion + '}';
     }
     
     
